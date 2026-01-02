@@ -4,7 +4,7 @@ const productsmain = [
     title: "Man United Jersey Home",
     name: "Man United Jersey Home",
     price: 3400,
-    image: "/src/assets/jersey10.jpg",
+    image: "/jersey10.jpg",
     colors: ["Red", "White"],
     sizes: ["S", "M", "L", "XL"],
     description: "Official club home jersey."
