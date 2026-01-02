@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Club Home Jersey 24-25",
+    "price": 599,
+    "originalPrice": 1299,
+    "image": "/images/jersey1.png",
+    "category": "Jersey"
+  },
+  {
+    "id": 2,
+    "title": "Away Football Jersey 24-25",
+    "price": 599,
+    "originalPrice": 1399,
+    "image": "/images/jersey2.png",
+    "category": "Jersey"
+  },
+  {
+    "id": 3,
+    "title": "Special Edition Jersey",
+    "price": 599,
+    "originalPrice": 1499,
+    "image": "/images/jersey3.png",
+    "category": "Jersey"
+  },
+  {
+    "id": 4,
+    "title": "Limited Fan Jersey",
+    "price": 599,
+    "originalPrice": 1599,
+    "image": "/images/jersey4.png",
+    "category": "Jersey"
+  }
+]

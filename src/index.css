@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;  
+    padding: 10px 40px;
+}
+#logo{
+    width: 70px;
+    height: 60px;
+}
+#logotext{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#websitename{
+    font-size: larger;
+}
+#content {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-right: 50px;
+}
+
+
+
+/* ---------------footer------------------ */
+
+.footcontainer{
+    background-color: black;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 85px;
+    padding: 10px 10px;
+}
+.footul{
+    list-style: none;
+}
+
+.copyright{
+    background-color: rgb(29, 27, 27);
+    color: white;
+    text-align: center;
+}
+.ptag{
+    
+    width: 200px;
+}
+
+
+
+/* ---------------------home---------------------- */
+
+.title{
+    margin-top: 280px;
+    font-size: 80px;
+    text-align: center;
+}
+.clearsale{
+    margin-top:300px;
+    text-align: center;
+}
+.clearproducts{
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    margin-top: 80px;
+}
+.imageproducts{
+    width: 250px;
+}
+
+
+.winter{
+    margin-top: 200px;
+}
+
+.wintertitle{
+    text-align: center;
+
+}
+
+/* ---------------- HERO VIDEO ---------------- */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 0;              /* IMPORTANT */
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+
+
+/* ------------------- products page -------------------------- */
+
+.allproducts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+  gap: 60px;
+  margin-top: 140px;
+  padding: 0 60px;
+}
+
+.allproducts div {
+  text-align: center;
+}
+
+
+
+/* ===============================
+   FIX NAVBAR LINKS (purple + underline issue)
+================================ */
+#content a {
+  color: white;
+  text-decoration: none;   /* remove underline */
+}
+
+#content a:visited {
+  color: white;            /* remove purple */
+}
+
+#content a:hover {
+  color: #dddddd;
+}
+
+/* ===============================
+   FOOTER LINKS FIX
+================================ */
+.footul a {
+  color: white;
+  text-decoration: none;
+}
+
+.footul a:visited {
+  color: white;
+}
+
+/* ===============================
+   LOGIN & SIGNUP BASIC STYLING
+================================ */
+form {
+  width: 320px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+/* ===============================
+   CART PAGE STYLING
+================================ */
+.cart-container {
+  width: 70%;
+  margin: 40px auto;
+}
+
+.cart-item {
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.cart-controls button {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-controls span {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+
+.logoutbuttonn{ 
+  width: 100px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 300px;
+}
+/* ======================================
+   RESPONSIVE DESIGN (BEGINNER FRIENDLY)
+====================================== */
+
+/* ---------- NAVBAR (MOBILE) ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  #content {
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  #logotext {
+    justify-content: center;
+  }
+}
+
+/* ---------- HOME PAGE ---------- */
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+    padding: 0 20px;
+  }
+
+  .clearsale {
+    margin-top: 150px;
+  }
+
+  .clearproducts {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .imageproducts {
+    width: 200px;
+  }
+}
+
+/* ---------- PRODUCTS PAGE GRID ---------- */
+@media (max-width: 1024px) {
+  .allproducts {
+    grid-template-columns: repeat(2, 1fr); /* tablets */
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .allproducts {
+    grid-template-columns: 1fr; /* mobile */
+    padding: 0 20px;
+  }
+}
+
+/* ---------- CART PAGE ---------- */
+@media (max-width: 768px) {
+  .cart-container {
+    width: 90%;
+  }
+
+  .cart-controls {
+    justify-content: center;
+  }
+}
+
+/* ---------- LOGIN / SIGNUP ---------- */
+@media (max-width: 480px) {
+  form {
+    width: 90%;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+}
+
+/* ---------- FIX FOOTER AT BOTTOM ---------- */
+html, body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footcontainer {
+  margin-top: auto;
+}
+
+
+
+
+/* nnewnewn */
+.allproducts{
+    margin-bottom: 200px;
+
+}
