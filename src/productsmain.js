@@ -14,7 +14,7 @@ const productsmain = [
     title: "Football Pro",
     name: "Football Pro",
     price: 599,
-    image: "/src/assets/football1.jpg",
+    image: "/football1.jpg",
     colors: ["Black", "White"],
     sizes: ["M", "L", "XL"],
     description: "Away football jersey."
@@ -24,7 +24,7 @@ const productsmain = [
     title:"Pump Kipsta",
     name: "Pump Kipsta",
     price: 599,
-    image: "/src/assets/pump.jpg",
+    image: "/pump.jpg",
     colors: ["Gold", "Black"],
     sizes: ["S", "M", "L"],
     description: "Special edition fan jersey."
@@ -34,7 +34,7 @@ const productsmain = [
     title:"Tights Kipsta",
     name: "Tights Kipsta",
     price: 1200,
-    image: "/src/assets/compression.jpg",
+    image: "/compression.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -44,7 +44,7 @@ const productsmain = [
     title:"Socks",
     name: "Socks",
     price: 250,
-    image: "/src/assets/stockings.jpg",
+    image: "/stockings.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -54,7 +54,7 @@ const productsmain = [
     title:"Gloves",
     name: "Gloves",
     price: 1200,
-    image: "/src/assets/gloves.jpg",
+    image: "/gloves.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -64,7 +64,7 @@ const productsmain = [
     title:"adidas socks",
     name: "adidas socks",
     price: 699,
-    image: "/src/assets/stockings2.jpg",
+    image: "/stockings2.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -74,7 +74,7 @@ const productsmain = [
     title: "Shoes Predator",
     name: "Shoes Predator",
     price: 599,
-    image: "/src/assets/shoes1.jpg",
+    image: "/shoes1.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -84,7 +84,7 @@ const productsmain = [
     title: "Shorts Nike",
     name: "Shorts Nike",
     price: 599,
-    image: "/src/assets/shorts1.jpg",
+    image: "/shorts1.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -94,7 +94,7 @@ const productsmain = [
     title:"Goalpost Solid",
     name: "Goalpost Solid",
     price: 8000,
-    image: "/src/assets/Goalpost.jpg",
+    image: "/Goalpost.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -104,7 +104,7 @@ const productsmain = [
     title: "Shoes Mercurial",
     name: "Shoes Mercurial",
     price: 3000,
-    image: "/src/assets/shoes3.jpg",
+    image: "/shoes3.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
@@ -114,7 +114,7 @@ const productsmain = [
     title: "Shins Kipsta",
     name: "Shins Kipsta",
     price: 599,
-    image: "/src/assets/shins.jpg",
+    image: "/shins.jpg",
     colors: ["Blue", "White"],
     sizes: ["M", "L", "XL"],
     description: "Limited fan edition jersey."
