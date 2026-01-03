@@ -10,17 +10,17 @@ const Cart = () => {
 
   const navigate = useNavigate();
 
-  // TOTAL PRICE
+  
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
     0
   );
 
-  // CHECKOUT
+
   const handleCheckout = () => {
     alert("🎉 Your order has been placed successfully!");
-    clearCart();            // empty cart
-    navigate("/products");  // redirect to products
+    clearCart();           
+    navigate("/products");  
   };
 
   if (cart.length === 0) {
@@ -40,7 +40,6 @@ const Cart = () => {
           <h4>{item.name}</h4>
           <p>Price: ₹{item.price}</p>
 
-          {/* QUANTITY CONTROLS */}
           <div className="cart-controls">
             <button onClick={() => removeFromCart(item.id)}>-</button>
             <span>{item.quantity}</span>

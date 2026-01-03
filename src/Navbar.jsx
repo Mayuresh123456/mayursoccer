@@ -28,7 +28,7 @@ const Navbar = () => {
         <li><Link to="/about">About</Link></li>
         <li><Link to="/account">Account</Link></li>
 
-        {/* CART ICON */}
+       
         <li style={{ position: "relative" }}>
           <Link to="/cart" style={{ textDecoration: "none" }}>
             🛒 Cart

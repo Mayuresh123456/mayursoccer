@@ -6,11 +6,9 @@ import { Link, useSearchParams } from "react-router-dom";
 const Products = () => {
   
 
-  // 🔹 search params (sir style)
   const [searchParam, setSearchParam] = useSearchParams();
   const searchText = searchParam.get("q") || "";
 
-  // 🔹 filter products by title
   const filteredProducts = productsmain.filter((item) =>
   (item.title || item.name)
     .toLowerCase()
@@ -18,7 +16,7 @@ const Products = () => {
   );
 
 
-  // 🔹 handle search input
+  
   const handleSearch = (e) => {
     const value = e.target.value;
     setSearchParam(value ? { q: value } : {});
@@ -28,7 +26,7 @@ const Products = () => {
     <>
       <Navbar />
 
-      {/* 🔍 SEARCH INPUT */}
+      
       <div style={{ textAlign: "center", margin: "20px" }}>
         <input
           type="text"
@@ -43,7 +41,7 @@ const Products = () => {
         />
       </div>
 
-      {/* 🛒 PRODUCTS LIST */}
+    
       <div className="allproducts">
         {filteredProducts.length === 0 && (
           <h3 style={{ textAlign: "center" }}>No products found</h3>

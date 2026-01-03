@@ -5,20 +5,24 @@ const LiveScores = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://www.scorebat.com/video-api/v3/")
-      .then((res) => res.json())
-      .then((data) => {
-        setMatches(data.response.slice(0, 10)); // first 10 matches
+    const getMatches = async () => {
+      try {
+        const res = await fetch("https://www.scorebat.com/video-api/v3/");
+        const data = await res.json();
+
+        setMatches(data.response.slice(0, 10)); 
         setLoading(false);
-      })
-      .catch((err) => {
-        console.error(err);
+      } catch (error) {
+        console.error(error);
         setLoading(false);
-      });
+      }
+    };
+
+    getMatches();
   }, []);
 
   return (
-    <div style={{ padding: "30px" , marginTop: "100px"}}>
+    <div style={{ padding: "30px", marginTop: "100px" }}>
       <h2>⚽ Live / Recent Matches</h2>
 
       {loading && <p>Loading matches...</p>}
@@ -38,7 +42,7 @@ const LiveScores = () => {
           >
             <h4>{match.title}</h4>
             <p>{match.competition}</p>
-            <a href={match.matchviewUrl} target="_blank">
+            <a href={match.matchviewUrl} target="_self">
               View Details
             </a>
           </div>

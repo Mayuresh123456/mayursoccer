@@ -10,7 +10,6 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // ✅ check login status
   const isLoggedIn = localStorage.getItem("isLoggedIn");
 
   const handleSignup = (e) => {
@@ -30,10 +29,9 @@ const SignUp = () => {
     navigate("/");
   };
 
-  // ✅ logout logic
   const handleLogout = () => {
   localStorage.removeItem("isLoggedIn");
-  localStorage.removeItem("cart");   // 🔥 clear cart
+  localStorage.removeItem("cart");   
   alert("Logged out successfully");
   navigate("/login");
 };
@@ -44,7 +42,6 @@ const SignUp = () => {
       <Navbar />
       <h1>SignUp Page</h1>
 
-      {/* 🔹 show signup form only if NOT logged in */}
       {!isLoggedIn && (
         <form onSubmit={handleSignup}>
           <input

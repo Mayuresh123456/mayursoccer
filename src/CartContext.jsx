@@ -5,18 +5,15 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  // Load cart from localStorage
   useEffect(() => {
     const savedCart = JSON.parse(localStorage.getItem("cart"));
     if (savedCart) setCart(savedCart);
   }, []);
 
-  // Save cart to localStorage
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  // ✅ ADD TO CART
   const addToCart = (product) => {
     setCart((prev) => {
       const exists = prev.find((item) => item.id === product.id);
@@ -33,12 +30,11 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // ✅ REMOVE FROM CART (THIS WAS MISSING)
+
   const removeFromCart = (id) => {
     setCart((prev) => prev.filter((item) => item.id !== id));
   };
 
-  // ✅ CLEAR CART (AFTER CHECKOUT)
   const clearCart = () => {
     setCart([]);
     localStorage.removeItem("cart");
